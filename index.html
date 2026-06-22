@@ -101,7 +101,15 @@
         <div class="about__side reveal">
           <div class="about__edu-card">
             <div class="edu-card">
-              <div class="edu-card__icon">🎓</div>
+              <div class="edu-card__icon">
+                <!-- graduation cap custom icon -->
+                <svg viewBox="0 0 32 32" fill="none" width="28" height="28">
+                  <path d="M2 13L16 7L30 13L16 19L2 13Z" fill="#EDE9FE" stroke="#6D28D9" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="M9 17V23C11 25.5 13.5 26.5 16 26.5C18.5 26.5 21 25.5 23 23V17" stroke="#6D28D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <line x1="30" y1="13" x2="30" y2="20" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle cx="30" cy="21.5" r="2" fill="#F59E0B"/>
+                </svg>
+              </div>
               <div>
                 <p class="edu-card__degree" data-pt="Bacharelado em Sistemas de Informação" data-en="B.Sc. Information Systems">Bacharelado em Sistemas de Informação</p>
                 <p class="edu-card__school">UEA</p>
@@ -109,7 +117,14 @@
               </div>
             </div>
             <div class="edu-card">
-              <div class="edu-card__icon">📚</div>
+              <div class="edu-card__icon">
+                <!-- book custom icon -->
+                <svg viewBox="0 0 32 32" fill="none" width="28" height="28">
+                  <path d="M5 5H14C15.7 5 17 6.3 17 8V28C17 28 14 27 11.5 27H5V5Z" fill="#EDE9FE" stroke="#6D28D9" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="M27 5H18C16.3 5 15 6.3 15 8V28C15 28 18 27 20.5 27H27V5Z" fill="#EDE9FE" stroke="#6D28D9" stroke-width="2" stroke-linejoin="round"/>
+                  <circle cx="23" cy="14" r="2.5" fill="#F59E0B"/>
+                </svg>
+              </div>
               <div>
                 <p class="edu-card__degree" data-pt="Técnico em Informática" data-en="Computer Technician Diploma">Técnico em Informática</p>
                 <p class="edu-card__school">IFAM</p>
@@ -158,7 +173,7 @@
             <div class="timeline__header">
               <div>
                 <h3 class="timeline__role">Software Engineer</h3>
-                <p class="timeline__company" data-pt="Empresa de Tecnologia · Manaus, AM" data-en="Tech Company · Manaus, AM">Empresa de Tecnologia · Manaus, AM</p>
+                <p class="timeline__company">CyberLabs · Manaus, AM</p>
               </div>
               <span class="timeline__badge" data-pt="Jan 2026 – Presente" data-en="Jan 2026 – Present">Jan 2026 – Presente</span>
             </div>
@@ -179,7 +194,7 @@
             <div class="timeline__header">
               <div>
                 <h3 class="timeline__role">Data Engineer</h3>
-                <p class="timeline__company" data-pt="Empresa de Tecnologia · Manaus, AM" data-en="Tech Company · Manaus, AM">Empresa de Tecnologia · Manaus, AM</p>
+                <p class="timeline__company">CyberLabs · Manaus, AM</p>
               </div>
               <span class="timeline__badge">Mar 2025 – Jan 2026</span>
             </div>
@@ -291,9 +306,19 @@
       </div>
       <div class="projects__grid">
 
-        <!-- DeclarAI -->
+        <!-- DeclarAI: document + AI circuit nodes -->
         <div class="project-card reveal">
-          <div class="project-card__banner project-card__banner--purple">📜</div>
+          <div class="project-card__banner project-card__banner--purple">
+            <svg viewBox="0 0 64 64" fill="none" width="72" height="72">
+              <rect x="14" y="8" width="30" height="38" rx="4" fill="#DDD6FE" stroke="#6D28D9" stroke-width="2.5"/>
+              <path d="M20 20H38M20 27H38M20 34H30" stroke="#6D28D9" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="46" cy="40" r="10" fill="#EDE9FE" stroke="#6D28D9" stroke-width="2"/>
+              <circle cx="43" cy="37" r="2" fill="#6D28D9"/>
+              <circle cx="49" cy="37" r="2" fill="#6D28D9"/>
+              <path d="M43 37L46 41L49 37" stroke="#6D28D9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="46" cy="41" r="2" fill="#F59E0B"/>
+            </svg>
+          </div>
           <div class="project-card__top">
             <a href="https://github.com/JulianaBallin/DeclarAI" target="_blank" rel="noopener" class="project-card__link" title="GitHub">
               <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
@@ -303,7 +328,7 @@
           <p class="project-card__subtitle" data-pt="Assistente com Agentic RAG para IRPF" data-en="Intelligent Assistant with Agentic RAG for Income Tax">Assistente com Agentic RAG para IRPF</p>
           <p class="project-card__desc"
              data-pt="Micro SaaS para organização de documentos fiscais e consulta sobre regras do IRPF. Upload de documentos, classificação tributária, consulta em linguagem natural e execução local para privacidade (conformidade LGPD)."
-             data-en="Micro SaaS for tax document organization and natural language queries about Income Tax (IRPF). Document upload, tax classification, natural language queries, and local execution for privacy (LGPD compliance).">
+             data-en="Micro SaaS for tax document organization and natural language queries about Income Tax. Document upload, tax classification, natural language queries, and local execution for LGPD privacy compliance.">
             Micro SaaS para organização de documentos fiscais e consulta sobre regras do IRPF. Upload de documentos, classificação tributária, consulta em linguagem natural e execução local para privacidade (conformidade LGPD).
           </p>
           <div class="project-card__tags">
@@ -312,9 +337,23 @@
           <div class="project-card__assoc" data-pt="UEA · 2026" data-en="UEA · 2026">UEA · 2026</div>
         </div>
 
-        <!-- AmazIA -->
+        <!-- AmazIA: bullseye + network -->
         <div class="project-card reveal">
-          <div class="project-card__banner project-card__banner--blue">🎯</div>
+          <div class="project-card__banner project-card__banner--blue">
+            <svg viewBox="0 0 64 64" fill="none" width="72" height="72">
+              <circle cx="32" cy="32" r="22" stroke="#BFDBFE" stroke-width="3"/>
+              <circle cx="32" cy="32" r="15" stroke="#93C5FD" stroke-width="2.5"/>
+              <circle cx="32" cy="32" r="8" fill="#BFDBFE" stroke="#3B82F6" stroke-width="2"/>
+              <circle cx="32" cy="32" r="3" fill="#2563EB"/>
+              <circle cx="12" cy="18" r="4" fill="#BFDBFE" stroke="#3B82F6" stroke-width="2"/>
+              <circle cx="52" cy="18" r="4" fill="#BFDBFE" stroke="#3B82F6" stroke-width="2"/>
+              <circle cx="12" cy="46" r="4" fill="#BFDBFE" stroke="#3B82F6" stroke-width="2"/>
+              <line x1="16" y1="20" x2="27" y2="27" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="3 2"/>
+              <line x1="48" y1="20" x2="37" y2="27" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="3 2"/>
+              <line x1="16" y1="44" x2="27" y2="37" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="3 2"/>
+              <circle cx="32" cy="12" r="3" fill="#F59E0B"/>
+            </svg>
+          </div>
           <div class="project-card__top">
             <a href="https://github.com/JulianaBallin/Recommendation-Systems-Sefaz" target="_blank" rel="noopener" class="project-card__link" title="GitHub">
               <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
@@ -333,9 +372,18 @@
           <div class="project-card__assoc" data-pt="UEA · 2025" data-en="UEA · 2025">UEA · 2025</div>
         </div>
 
-        <!-- ANP Fuel -->
+        <!-- ANP Fuel: bar chart + fuel drop -->
         <div class="project-card reveal">
-          <div class="project-card__banner project-card__banner--amber">⛽</div>
+          <div class="project-card__banner project-card__banner--amber">
+            <svg viewBox="0 0 64 64" fill="none" width="72" height="72">
+              <rect x="8" y="36" width="10" height="18" rx="2" fill="#FDE68A" stroke="#D97706" stroke-width="2"/>
+              <rect x="22" y="26" width="10" height="28" rx="2" fill="#FDE68A" stroke="#D97706" stroke-width="2"/>
+              <rect x="36" y="14" width="10" height="40" rx="2" fill="#D97706"/>
+              <path d="M50 22C50 22 48 18 50 14C52 18 54 16 54 22C54 26.4 52.2 28 50 28C47.8 28 46 26.4 46 22C46 19.5 48 18 50 22Z" fill="#FDE68A" stroke="#D97706" stroke-width="2"/>
+              <line x1="6" y1="54" x2="58" y2="54" stroke="#D97706" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="41" cy="13" r="3" fill="#F59E0B"/>
+            </svg>
+          </div>
           <div class="project-card__top">
             <a href="https://github.com/JulianaBallin/AnaliseCombustiveisANP" target="_blank" rel="noopener" class="project-card__link" title="GitHub">
               <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
@@ -354,9 +402,24 @@
           <div class="project-card__assoc" data-pt="UEA · 2026" data-en="UEA · 2026">UEA · 2026</div>
         </div>
 
-        <!-- Ergopose -->
+        <!-- Ergopose: figure + angle arcs -->
         <div class="project-card reveal">
-          <div class="project-card__banner project-card__banner--rose">🧘</div>
+          <div class="project-card__banner project-card__banner--rose">
+            <svg viewBox="0 0 64 64" fill="none" width="72" height="72">
+              <circle cx="32" cy="10" r="6" fill="#FECDD3" stroke="#E11D48" stroke-width="2"/>
+              <line x1="32" y1="16" x2="32" y2="36" stroke="#E11D48" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="32" y1="36" x2="20" y2="52" stroke="#E11D48" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="32" y1="36" x2="44" y2="52" stroke="#E11D48" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="20" y1="24" x2="44" y2="24" stroke="#E11D48" stroke-width="2" stroke-linecap="round"/>
+              <!-- angle arc left -->
+              <path d="M32 36 A12 12 0 0 0 21 42" stroke="#FDA4AF" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+              <!-- angle arc right -->
+              <path d="M32 36 A12 12 0 0 1 43 42" stroke="#FDA4AF" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+              <circle cx="50" cy="16" r="4" fill="#FECDD3" stroke="#E11D48" stroke-width="1.5"/>
+              <text x="48" y="18.5" font-size="5" fill="#E11D48" text-anchor="middle" font-weight="bold">!</text>
+              <circle cx="10" cy="36" r="3" fill="#F59E0B"/>
+            </svg>
+          </div>
           <div class="project-card__top">
             <a href="https://github.com/JulianaBallin/Ergopose-Risk-Classifier" target="_blank" rel="noopener" class="project-card__link" title="GitHub">
               <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
@@ -365,9 +428,9 @@
           <h3 class="project-card__title">Ergopose</h3>
           <p class="project-card__subtitle" data-pt="Classificador de Risco Ergonômico por Visão Computacional" data-en="Ergonomic Risk Classifier with Computer Vision">Classificador de Risco Ergonômico por Visão Computacional</p>
           <p class="project-card__desc"
-             data-pt="Sistema leve de visão computacional com detecção de marcos corporais via webcam para calcular ângulos posturais (pescoço, tronco e ombros) e classificar risco ergonômico (baixo, médio ou alto) com rede neural artificial."
-             data-en="Lightweight computer vision system using webcam-based body landmark detection to calculate posture angles (neck, trunk, and shoulders) and classify ergonomic risk levels (low, medium, or high) using an artificial neural network.">
-            Sistema leve de visão computacional com detecção de marcos corporais via webcam para calcular ângulos posturais (pescoço, tronco e ombros) e classificar risco ergonômico (baixo, médio ou alto) com rede neural artificial.
+             data-pt="Sistema leve de visão computacional com detecção de marcos corporais via webcam para calcular ângulos posturais e classificar risco ergonômico (baixo, médio ou alto) com rede neural artificial."
+             data-en="Lightweight computer vision system using webcam-based body landmark detection to calculate posture angles and classify ergonomic risk levels (low, medium, or high) using an artificial neural network.">
+            Sistema leve de visão computacional com detecção de marcos corporais via webcam para calcular ângulos posturais e classificar risco ergonômico (baixo, médio ou alto) com rede neural artificial.
           </p>
           <div class="project-card__tags">
             <span class="tag tag--sm">Python</span><span class="tag tag--sm">Computer Vision</span><span class="tag tag--sm">Neural Network</span><span class="tag tag--sm">MediaPipe</span>
@@ -375,9 +438,21 @@
           <div class="project-card__assoc" data-pt="UEA · 2025" data-en="UEA · 2025">UEA · 2025</div>
         </div>
 
-        <!-- RNA Churn -->
+        <!-- RNA Churn: neural circular loop -->
         <div class="project-card reveal">
-          <div class="project-card__banner project-card__banner--violet">🔮</div>
+          <div class="project-card__banner project-card__banner--violet">
+            <svg viewBox="0 0 64 64" fill="none" width="72" height="72">
+              <circle cx="32" cy="32" r="18" stroke="#C4B5FD" stroke-width="2" stroke-dasharray="5 3"/>
+              <circle cx="32" cy="14" r="5" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+              <circle cx="46" cy="41" r="5" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+              <circle cx="18" cy="41" r="5" fill="#7C3AED"/>
+              <path d="M35 17L43 37" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 2"/>
+              <path d="M21 38L29 17" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 2"/>
+              <path d="M21 44L43 44" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 2"/>
+              <path d="M32 14 A18 18 0 0 1 48 38" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arr)"/>
+              <circle cx="32" cy="32" r="4" fill="#F59E0B"/>
+            </svg>
+          </div>
           <div class="project-card__top">
             <a href="https://github.com/JulianaBallin/Rna-Churn-Prediction" target="_blank" rel="noopener" class="project-card__link" title="GitHub">
               <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
@@ -386,9 +461,9 @@
           <h3 class="project-card__title">RNA – Churn Prediction</h3>
           <p class="project-card__subtitle" data-pt="Previsão de Cancelamento com Redes Neurais" data-en="Customer Churn Prediction with Neural Networks">Previsão de Cancelamento com Redes Neurais</p>
           <p class="project-card__desc"
-             data-pt="Atividade prática da disciplina de Redes Neurais, com experimentos, análises e implementação de modelos em Python via Jupyter Notebook. Utiliza NumPy, Pandas e Matplotlib para o desenvolvimento dos modelos de predição de churn."
-             data-en="Practical assignment for the Neural Networks course, with experiments, analyses, and model implementations in Python via Jupyter Notebook. Uses NumPy, Pandas, and Matplotlib to develop customer churn prediction models.">
-            Atividade prática da disciplina de Redes Neurais, com experimentos, análises e implementação de modelos em Python via Jupyter Notebook. Utiliza NumPy, Pandas e Matplotlib para o desenvolvimento dos modelos de predição de churn.
+             data-pt="Atividade prática da disciplina de Redes Neurais, com experimentos, análises e implementação de modelos em Python via Jupyter Notebook, utilizando NumPy, Pandas e Matplotlib."
+             data-en="Practical assignment for the Neural Networks course, with experiments, analyses, and model implementations in Python via Jupyter Notebook, using NumPy, Pandas, and Matplotlib.">
+            Atividade prática da disciplina de Redes Neurais, com experimentos, análises e implementação de modelos em Python via Jupyter Notebook, utilizando NumPy, Pandas e Matplotlib.
           </p>
           <div class="project-card__tags">
             <span class="tag tag--sm">Python</span><span class="tag tag--sm">Neural Network</span><span class="tag tag--sm">Jupyter</span><span class="tag tag--sm">Pandas</span>
@@ -396,9 +471,26 @@
           <div class="project-card__assoc" data-pt="UEA · 2025" data-en="UEA · 2025">UEA · 2025</div>
         </div>
 
-        <!-- RNA Forest -->
+        <!-- RNA Forest: tree + classification branches -->
         <div class="project-card reveal">
-          <div class="project-card__banner project-card__banner--emerald">🌲</div>
+          <div class="project-card__banner project-card__banner--emerald">
+            <svg viewBox="0 0 64 64" fill="none" width="72" height="72">
+              <line x1="32" y1="56" x2="32" y2="38" stroke="#059669" stroke-width="3" stroke-linecap="round"/>
+              <line x1="32" y1="38" x2="18" y2="26" stroke="#059669" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="32" y1="38" x2="46" y2="26" stroke="#059669" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="18" y1="26" x2="10" y2="16" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+              <line x1="18" y1="26" x2="26" y2="16" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+              <line x1="46" y1="26" x2="38" y2="16" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+              <line x1="46" y1="26" x2="54" y2="16" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="32" cy="38" r="5" fill="#D1FAE5" stroke="#059669" stroke-width="2"/>
+              <circle cx="18" cy="26" r="4" fill="#D1FAE5" stroke="#059669" stroke-width="2"/>
+              <circle cx="46" cy="26" r="4" fill="#D1FAE5" stroke="#059669" stroke-width="2"/>
+              <circle cx="10" cy="16" r="3" fill="#059669"/>
+              <circle cx="26" cy="16" r="3" fill="#059669"/>
+              <circle cx="38" cy="16" r="3" fill="#059669"/>
+              <circle cx="54" cy="16" r="3" fill="#F59E0B"/>
+            </svg>
+          </div>
           <div class="project-card__top">
             <a href="https://github.com/JulianaBallin/Rna-Forest-Cover-Type-Prediction" target="_blank" rel="noopener" class="project-card__link" title="GitHub">
               <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
@@ -407,9 +499,9 @@
           <h3 class="project-card__title">RNA – Forest Cover Type</h3>
           <p class="project-card__subtitle" data-pt="RNA vs Análise Discriminante para Classificação Florestal" data-en="ANN vs Discriminant Analysis for Forest Classification">RNA vs Análise Discriminante para Classificação Florestal</p>
           <p class="project-card__desc"
-             data-pt="Análise comparativa entre Redes Neurais Artificiais (RNA) e Análise Discriminante (AD) para previsão de tipo de cobertura florestal, utilizando o conjunto de dados público da UCI."
-             data-en="Comparative analysis of Artificial Neural Networks (ANN) and Discriminant Analysis (DA) for Forest Cover Type Prediction using the UCI dataset.">
-            Análise comparativa entre Redes Neurais Artificiais (RNA) e Análise Discriminante (AD) para previsão de tipo de cobertura florestal, utilizando o conjunto de dados público da UCI.
+             data-pt="Análise comparativa entre Redes Neurais Artificiais (RNA) e Análise Discriminante para previsão de tipo de cobertura florestal, utilizando o conjunto de dados público da UCI."
+             data-en="Comparative analysis of Artificial Neural Networks (ANN) and Discriminant Analysis for Forest Cover Type Prediction using the UCI public dataset.">
+            Análise comparativa entre Redes Neurais Artificiais (RNA) e Análise Discriminante para previsão de tipo de cobertura florestal, utilizando o conjunto de dados público da UCI.
           </p>
           <div class="project-card__tags">
             <span class="tag tag--sm">Python</span><span class="tag tag--sm">ANN</span><span class="tag tag--sm">Discriminant Analysis</span><span class="tag tag--sm">UCI</span>
@@ -417,9 +509,20 @@
           <div class="project-card__assoc" data-pt="UEA · 2025" data-en="UEA · 2025">UEA · 2025</div>
         </div>
 
-        <!-- IoT Smart Room -->
+        <!-- IoT Smart Room: smart lightbulb + wifi -->
         <div class="project-card reveal">
-          <div class="project-card__banner project-card__banner--green">💡</div>
+          <div class="project-card__banner project-card__banner--green">
+            <svg viewBox="0 0 64 64" fill="none" width="72" height="72">
+              <path d="M32 12C24.3 12 18 18.3 18 26C18 31.4 21 36.1 25.5 38.6V44H38.5V38.6C43 36.1 46 31.4 46 26C46 18.3 39.7 12 32 12Z" fill="#D1FAE5" stroke="#059669" stroke-width="2.5" stroke-linejoin="round"/>
+              <rect x="25.5" y="44" width="13" height="4" rx="2" fill="#D1FAE5" stroke="#059669" stroke-width="2"/>
+              <rect x="27" y="48" width="10" height="3" rx="1.5" fill="#059669"/>
+              <!-- wifi arcs -->
+              <path d="M25 24C25 24 27.5 20 32 20C36.5 20 39 24 39 24" stroke="#059669" stroke-width="2" stroke-linecap="round" fill="none"/>
+              <path d="M28 27C28 27 29.5 25 32 25C34.5 25 36 27 36 27" stroke="#059669" stroke-width="2" stroke-linecap="round" fill="none"/>
+              <circle cx="32" cy="30" r="2.5" fill="#059669"/>
+              <circle cx="54" cy="16" r="3" fill="#F59E0B"/>
+            </svg>
+          </div>
           <div class="project-card__top">
             <a href="https://github.com/JulianaBallin/Iot-Smart-Room" target="_blank" rel="noopener" class="project-card__link" title="GitHub">
               <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
@@ -428,9 +531,9 @@
           <h3 class="project-card__title">IoT – Smart Room</h3>
           <p class="project-card__subtitle" data-pt="Sala Automatizada com ESP32, MQTT e Node-RED" data-en="Automated Classroom with ESP32, MQTT and Node-RED">Sala Automatizada com ESP32, MQTT e Node-RED</p>
           <p class="project-card__desc"
-             data-pt="Sistema integrado simulando uma sala automatizada com WOKWI (ESP32), comunicação MQTT e dashboard interativo no Node-RED. Sensores LDR, DHT22, sonar e servo motor para controle em tempo real de luminosidade, temperatura e acesso."
+             data-pt="Sistema integrado simulando uma sala automatizada com WOKWI (ESP32), comunicação MQTT e dashboard interativo no Node-RED. Sensores LDR, DHT22, sonar e servo motor para controle de luminosidade, temperatura e acesso em tempo real."
              data-en="Integrated system simulating an automated classroom using WOKWI (ESP32), MQTT communication, and an interactive Node-RED dashboard. LDR, DHT22, sonar, and servo motor sensors for real-time control of lighting, temperature, and access.">
-            Sistema integrado simulando uma sala automatizada com WOKWI (ESP32), comunicação MQTT e dashboard interativo no Node-RED. Sensores LDR, DHT22, sonar e servo motor para controle em tempo real de luminosidade, temperatura e acesso.
+            Sistema integrado simulando uma sala automatizada com WOKWI (ESP32), comunicação MQTT e dashboard interativo no Node-RED. Sensores LDR, DHT22, sonar e servo motor para controle de luminosidade, temperatura e acesso em tempo real.
           </p>
           <div class="project-card__tags">
             <span class="tag tag--sm">ESP32</span><span class="tag tag--sm">MQTT</span><span class="tag tag--sm">Node-RED</span><span class="tag tag--sm">Arduino</span><span class="tag tag--sm">IoT</span>
@@ -438,9 +541,21 @@
           <div class="project-card__assoc">UEA · 2025</div>
         </div>
 
-        <!-- Inventorize -->
+        <!-- Inventorize: organized grid + checkmark -->
         <div class="project-card reveal">
-          <div class="project-card__banner project-card__banner--indigo">🗂️</div>
+          <div class="project-card__banner project-card__banner--indigo">
+            <svg viewBox="0 0 64 64" fill="none" width="72" height="72">
+              <rect x="8" y="8" width="20" height="20" rx="4" fill="#C7D2FE" stroke="#4F46E5" stroke-width="2"/>
+              <rect x="36" y="8" width="20" height="20" rx="4" fill="#C7D2FE" stroke="#4F46E5" stroke-width="2"/>
+              <rect x="8" y="36" width="20" height="20" rx="4" fill="#C7D2FE" stroke="#4F46E5" stroke-width="2"/>
+              <rect x="36" y="36" width="20" height="20" rx="4" fill="#4F46E5"/>
+              <path d="M40 46L44 50L52 40" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="12" y1="18" x2="24" y2="18" stroke="#4F46E5" stroke-width="2" stroke-linecap="round"/>
+              <line x1="40" y1="18" x2="52" y2="18" stroke="#4F46E5" stroke-width="2" stroke-linecap="round"/>
+              <line x1="12" y1="46" x2="24" y2="46" stroke="#4F46E5" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="18" cy="13" r="2" fill="#F59E0B"/>
+            </svg>
+          </div>
           <div class="project-card__top">
             <a href="https://github.com/JulianaBallin/Inventorize-Webapp" target="_blank" rel="noopener" class="project-card__link" title="GitHub">
               <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
@@ -473,12 +588,21 @@
       <div class="courses__grid">
 
         <div class="course-card reveal">
-          <div class="course-card__preview">
-            <img src="assets/courses/cert-llms-python.jpg" alt="Certificate" onerror="this.parentElement.style.display='none'">
+          <div class="course-card__preview expandable-img" title="Clique para ampliar">
+            <img src="assets/courses/cert-llms-python.jpg" alt="Certificado: Text Analysis and LLMs with Python" data-modal>
           </div>
           <div class="course-card__header">
-            <span class="course-card__icon">🤖</span>
-            <span class="course-card__date">Mar 2026</span>
+            <div class="course-icon-wrap">
+              <!-- brain + nodes icon -->
+              <svg viewBox="0 0 32 32" fill="none" width="28" height="28">
+                <path d="M16 6C11.6 6 8 9.6 8 14C8 16.5 9.1 18.7 10.8 20.3L10 27H22L21.2 20.3C22.9 18.7 24 16.5 24 14C24 9.6 20.4 6 16 6Z" fill="#EDE9FE" stroke="#6D28D9" stroke-width="2" stroke-linejoin="round"/>
+                <circle cx="13" cy="13" r="1.5" fill="#6D28D9"/>
+                <circle cx="19" cy="13" r="1.5" fill="#6D28D9"/>
+                <path d="M13 13L16 17L19 13" stroke="#6D28D9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="16" cy="17" r="2" fill="#F59E0B"/>
+              </svg>
+            </div>
+            <span class="course-card__date">Mar 2026 · 17h 54min</span>
           </div>
           <h3 class="course-card__title" data-pt="Análise de Texto e LLMs com Python" data-en="Text Analysis and LLMs with Python">Análise de Texto e LLMs com Python</h3>
           <p class="course-card__issuer">QA Ltd · ID 22748777</p>
@@ -491,12 +615,26 @@
         </div>
 
         <div class="course-card reveal">
-          <div class="course-card__preview">
-            <img src="assets/courses/cert-kubernetes.jpg" alt="Certificate" onerror="this.parentElement.style.display='none'">
+          <div class="course-card__preview expandable-img" title="Clique para ampliar">
+            <img src="assets/courses/cert-kubernetes.jpg" alt="Certificado: Kubernetes Tools" data-modal>
           </div>
           <div class="course-card__header">
-            <span class="course-card__icon">☸️</span>
-            <span class="course-card__date">Mar 2026</span>
+            <div class="course-icon-wrap">
+              <!-- k8s wheel icon -->
+              <svg viewBox="0 0 32 32" fill="none" width="28" height="28">
+                <circle cx="16" cy="16" r="10" fill="#EDE9FE" stroke="#6D28D9" stroke-width="2"/>
+                <circle cx="16" cy="16" r="3.5" fill="#6D28D9"/>
+                <line x1="16" y1="6" x2="16" y2="12.5" stroke="#6D28D9" stroke-width="2" stroke-linecap="round"/>
+                <line x1="16" y1="19.5" x2="16" y2="26" stroke="#6D28D9" stroke-width="2" stroke-linecap="round"/>
+                <line x1="6" y1="16" x2="12.5" y2="16" stroke="#6D28D9" stroke-width="2" stroke-linecap="round"/>
+                <line x1="19.5" y1="16" x2="26" y2="16" stroke="#6D28D9" stroke-width="2" stroke-linecap="round"/>
+                <line x1="8.9" y1="8.9" x2="13.4" y2="13.4" stroke="#6D28D9" stroke-width="2" stroke-linecap="round"/>
+                <line x1="18.6" y1="18.6" x2="23.1" y2="23.1" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+                <line x1="23.1" y1="8.9" x2="18.6" y2="13.4" stroke="#6D28D9" stroke-width="2" stroke-linecap="round"/>
+                <line x1="13.4" y1="18.6" x2="8.9" y2="23.1" stroke="#6D28D9" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span class="course-card__date">Mar 2026 · 13h 07min</span>
           </div>
           <h3 class="course-card__title">Kubernetes Tools</h3>
           <p class="course-card__issuer">QA Ltd · ID 22746592</p>
@@ -509,12 +647,21 @@
         </div>
 
         <div class="course-card reveal">
-          <div class="course-card__preview">
-            <img src="assets/courses/cert-containers.jpg" alt="Certificate" onerror="this.parentElement.style.display='none'">
+          <div class="course-card__preview expandable-img" title="Clique para ampliar">
+            <img src="assets/courses/cert-containers.jpg" alt="Certificado: Gerenciamento Avançado de Containers" data-modal>
           </div>
           <div class="course-card__header">
-            <span class="course-card__icon">🐳</span>
-            <span class="course-card__date">Mai 2026</span>
+            <div class="course-icon-wrap">
+              <!-- stacked containers icon -->
+              <svg viewBox="0 0 32 32" fill="none" width="28" height="28">
+                <rect x="4" y="19" width="24" height="9" rx="2" fill="#EDE9FE" stroke="#6D28D9" stroke-width="2"/>
+                <rect x="4" y="12" width="24" height="9" rx="2" fill="#EDE9FE" stroke="#6D28D9" stroke-width="2"/>
+                <rect x="4" y="5" width="24" height="9" rx="2" fill="#6D28D9"/>
+                <line x1="9" y1="9.5" x2="23" y2="9.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="25" cy="23.5" r="2" fill="#F59E0B"/>
+              </svg>
+            </div>
+            <span class="course-card__date">Mai 2026 · 20h</span>
           </div>
           <h3 class="course-card__title" data-pt="Gerenciamento Avançado de Containers" data-en="Advanced Container Management">Gerenciamento Avançado de Containers</h3>
           <p class="course-card__issuer">UEA · ID 1630635</p>
@@ -527,12 +674,19 @@
         </div>
 
         <div class="course-card reveal">
-          <div class="course-card__preview">
-            <img src="assets/courses/cert-rami40.jpg" alt="Certificate" onerror="this.parentElement.style.display='none'">
+          <div class="course-card__preview expandable-img" title="Clique para ampliar">
+            <img src="assets/courses/cert-rami40.jpg" alt="Certificado: Fundamentos Indústria 4.0" data-modal>
           </div>
           <div class="course-card__header">
-            <span class="course-card__icon">🏭</span>
-            <span class="course-card__date">Jan 2026</span>
+            <div class="course-icon-wrap">
+              <!-- gear + data icon -->
+              <svg viewBox="0 0 32 32" fill="none" width="28" height="28">
+                <path d="M13.5 4H18.5V7C19.5 7.4 20.4 7.9 21.2 8.6L24 7L27 12L24.5 13.5C24.7 14 24.8 14.5 24.8 15S24.7 16 24.5 16.5L27 18L24 23L21.2 21.4C20.4 22.1 19.5 22.6 18.5 23V26H13.5V23C12.5 22.6 11.6 22.1 10.8 21.4L8 23L5 18L7.5 16.5C7.3 16 7.2 15.5 7.2 15S7.3 14 7.5 13.5L5 12L8 7L10.8 8.6C11.6 7.9 12.5 7.4 13.5 7V4Z" fill="#EDE9FE" stroke="#6D28D9" stroke-width="2" stroke-linejoin="round"/>
+                <circle cx="16" cy="15" r="4" fill="#6D28D9"/>
+                <circle cx="16" cy="15" r="1.5" fill="#F59E0B"/>
+              </svg>
+            </div>
+            <span class="course-card__date">Jan 2026 · 40h</span>
           </div>
           <h3 class="course-card__title" data-pt="Fundamentos Indústria 4.0: RAMI 4.0 e AAS" data-en="Industry 4.0 Fundamentals: RAMI 4.0 and AAS">Fundamentos Indústria 4.0: RAMI 4.0 e AAS</h3>
           <p class="course-card__issuer">UEA · ID 1592966</p>
@@ -545,15 +699,25 @@
         </div>
 
         <div class="course-card reveal">
-          <div class="course-card__preview">
-            <img src="assets/courses/cert-csharp.jpg" alt="Certificate" onerror="this.parentElement.style.display='none'">
+          <div class="course-card__preview expandable-img" title="Clique para ampliar">
+            <img src="assets/courses/cert-csharp.jpg" alt="Certificado: Desenvolvimento em C#" data-modal>
           </div>
           <div class="course-card__header">
-            <span class="course-card__icon">💻</span>
-            <span class="course-card__date">Jun 2026</span>
+            <div class="course-icon-wrap">
+              <!-- C# brackets icon -->
+              <svg viewBox="0 0 32 32" fill="none" width="28" height="28">
+                <path d="M11 6C8.5 8 7 11.5 7 16C7 20.5 8.5 24 11 26" stroke="#6D28D9" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M21 6C23.5 8 25 11.5 25 16C25 20.5 23.5 24 21 26" stroke="#6D28D9" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="19" y1="11" x2="19" y2="21" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="23" y1="11" x2="23" y2="21" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="17" y1="14" x2="25" y2="14" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+                <line x1="17" y1="18" x2="25" y2="18" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span class="course-card__date">Jun 2026 · 22h</span>
           </div>
           <h3 class="course-card__title" data-pt="Desenvolvimento em C#" data-en="C# Development">Desenvolvimento em C#</h3>
-          <p class="course-card__issuer">EST/UEA · ID 1637916 · 22h</p>
+          <p class="course-card__issuer">EST/UEA · ID 1637916</p>
           <p class="course-card__desc"
              data-pt="Fundamentos do C# e POO: classes, herança, polimorfismo, LINQ, ADO.NET, Entity Framework Core, APIs RESTful com ASP.NET Core e autenticação."
              data-en="C# and OOP fundamentals: classes, inheritance, polymorphism, LINQ, ADO.NET, Entity Framework Core, RESTful APIs with ASP.NET Core, and authentication.">
@@ -575,13 +739,22 @@
       </div>
       <div class="achievements__grid">
 
-        <!-- 1: Vestibular Macro -->
         <div class="achievement-card reveal">
-          <div class="achievement-card__preview">
-            <img src="assets/achievements/rank.png" alt="" onerror="this.parentElement.style.display='none'">
+          <div class="achievement-card__preview expandable-img" title="Clique para ampliar">
+            <img src="assets/achievements/rank.png" alt="1º Lugar no Vestibular" data-modal>
           </div>
           <div class="achievement-card__body">
-            <div class="achievement-card__icon">🏆</div>
+            <div class="achievement-card__icon">
+              <!-- trophy icon -->
+              <svg viewBox="0 0 32 32" fill="none" width="36" height="36">
+                <path d="M10 4H22V16C22 19.3 19.3 22 16 22C12.7 22 10 19.3 10 16V4Z" fill="#EDE9FE" stroke="#6D28D9" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M10 7H5V12C5 14 6.8 15.5 9 15.8" stroke="#6D28D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 7H27V12C27 14 25.2 15.5 23 15.8" stroke="#6D28D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="16" y1="22" x2="16" y2="26" stroke="#6D28D9" stroke-width="2"/>
+                <path d="M10 26H22" stroke="#6D28D9" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="16" cy="13" r="3" fill="#F59E0B"/>
+              </svg>
+            </div>
             <div>
               <h3 class="achievement-card__title"
                   data-pt="1º Lugar no Vestibular Macro (Curso e Geral)"
@@ -595,53 +768,76 @@
           </div>
         </div>
 
-        <!-- 2: IR 9.2 -->
         <div class="achievement-card reveal">
-          <div class="achievement-card__preview">
-            <img src="assets/achievements/rank-interno.png" alt="" onerror="this.parentElement.style.display='none'">
+          <div class="achievement-card__preview expandable-img" title="Clique para ampliar">
+            <img src="assets/achievements/rank-interno.png" alt="IR 9.2" data-modal>
           </div>
           <div class="achievement-card__body">
-            <div class="achievement-card__icon">📈</div>
+            <div class="achievement-card__icon">
+              <!-- rising bars icon -->
+              <svg viewBox="0 0 32 32" fill="none" width="36" height="36">
+                <rect x="4" y="18" width="6" height="10" rx="1.5" fill="#EDE9FE" stroke="#6D28D9" stroke-width="2"/>
+                <rect x="13" y="12" width="6" height="16" rx="1.5" fill="#EDE9FE" stroke="#6D28D9" stroke-width="2"/>
+                <rect x="22" y="6" width="6" height="22" rx="1.5" fill="#6D28D9"/>
+                <circle cx="25" cy="5" r="2.5" fill="#F59E0B"/>
+                <line x1="3" y1="28" x2="29" y2="28" stroke="#6D28D9" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
             <div>
               <h3 class="achievement-card__title"
-                  data-pt="Maior IR do Curso em Sistemas de Informação (UEA)"
-                  data-en="Highest Academic Performance Index in Information Systems (UEA)">Maior IR do Curso em Sistemas de Informação (UEA)</h3>
+                  data-pt="IR 9.2 em Sistemas de Informação (UEA)"
+                  data-en="GPA 9.2 in Information Systems (UEA)">IR 9.2 em Sistemas de Informação (UEA)</h3>
               <p class="achievement-card__desc"
-                 data-pt="Índice de Rendimento (IR) 9.2 ao longo da graduação, o maior do curso de Sistemas de Informação da UEA."
-                 data-en="Academic performance index (GPA) of 9.2 throughout the program, the highest in the Information Systems course at UEA.">
-                Índice de Rendimento (IR) 9.2 ao longo da graduação, o maior do curso de Sistemas de Informação da UEA.
+                 data-pt="Índice de Rendimento (IR) 9.2 ao longo da graduação, um resultado elevado para os padrões de uma universidade pública de alta exigência acadêmica."
+                 data-en="Academic performance index (GPA) of 9.2 throughout the program, a high achievement by the standards of a demanding public university.">
+                Índice de Rendimento (IR) 9.2 ao longo da graduação, um resultado elevado para os padrões de uma universidade pública de alta exigência acadêmica.
               </p>
             </div>
           </div>
         </div>
 
-        <!-- 3: WEI 2026 -->
         <div class="achievement-card reveal">
-          <div class="achievement-card__preview">
-            <img src="assets/achievements/paper.png" alt="" onerror="this.parentElement.style.display='none'">
+          <div class="achievement-card__preview expandable-img" title="Clique para ampliar">
+            <img src="assets/achievements/paper.png" alt="Artigo WEI 2026" data-modal>
           </div>
           <div class="achievement-card__body">
-            <div class="achievement-card__icon">📝</div>
+            <div class="achievement-card__icon">
+              <!-- paper + star icon -->
+              <svg viewBox="0 0 32 32" fill="none" width="36" height="36">
+                <path d="M6 4H20L26 10V28H6V4Z" fill="#EDE9FE" stroke="#6D28D9" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M20 4V10H26" stroke="#6D28D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11 15L12.5 12.2L14 15L16.8 15.5L14.9 17.5L15.3 20.3L12.5 18.9L9.7 20.3L10.1 17.5L8.2 15.5L11 15Z" fill="#F59E0B"/>
+              </svg>
+            </div>
             <div>
               <h3 class="achievement-card__title"
                   data-pt="Artigo Aceito no WEI 2026 (CSBC)"
                   data-en="Paper Accepted at WEI 2026 (CSBC)">Artigo Aceito no WEI 2026 (CSBC)</h3>
               <p class="achievement-card__desc"
-                 data-pt='Publicação do artigo "Avaliação do Uso de LLMs na Geração de CTs a Partir de User Stories" no Workshop sobre Educação em Computação. De 289 submissões válidas, apenas 83 foram aceitas.'
-                 data-en='Paper "Evaluation of LLM Use in Test Case Generation from User Stories" accepted at the Workshop on Education in Computing (WEI 2026). Of 289 valid submissions, only 83 were accepted.'>
+                 data-pt='Publicação do artigo "Avaliação do Uso de LLMs na Geração de CTs a Partir de User Stories" no WEI 2026. De 289 submissões válidas, apenas 83 foram aceitas.'
+                 data-en='Paper "Evaluation of LLM Use in Test Case Generation from User Stories" accepted at WEI 2026. Of 289 valid submissions, only 83 were accepted.'>
                 Publicação do artigo "Avaliação do Uso de LLMs na Geração de CTs a Partir de User Stories" no WEI 2026. De 289 submissões válidas, apenas 83 foram aceitas.
               </p>
             </div>
           </div>
         </div>
 
-        <!-- 4: TCC -->
         <div class="achievement-card reveal">
-          <div class="achievement-card__preview">
-            <img src="assets/achievements/tcc.png" alt="" onerror="this.parentElement.style.display='none'">
+          <div class="achievement-card__preview expandable-img" title="Clique para ampliar">
+            <img src="assets/achievements/tcc.png" alt="Nota máxima TCC" data-modal>
           </div>
           <div class="achievement-card__body">
-            <div class="achievement-card__icon">✨</div>
+            <div class="achievement-card__icon">
+              <!-- document + checkmark icon -->
+              <svg viewBox="0 0 32 32" fill="none" width="36" height="36">
+                <path d="M6 4H26V28H6V4Z" fill="#EDE9FE" stroke="#6D28D9" stroke-width="2" stroke-linejoin="round"/>
+                <line x1="11" y1="12" x2="21" y2="12" stroke="#6D28D9" stroke-width="2" stroke-linecap="round"/>
+                <line x1="11" y1="17" x2="21" y2="17" stroke="#6D28D9" stroke-width="2" stroke-linecap="round"/>
+                <line x1="11" y1="22" x2="16" y2="22" stroke="#6D28D9" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="23" cy="22" r="5" fill="#F59E0B"/>
+                <path d="M21 22L22.5 23.5L25.5 20.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
             <div>
               <h3 class="achievement-card__title"
                   data-pt="Nota Máxima em TCC 1 e TCC 2"
@@ -655,13 +851,25 @@
           </div>
         </div>
 
-        <!-- 5: Flag Football -->
         <div class="achievement-card reveal">
-          <div class="achievement-card__preview">
-            <img src="assets/achievements/football.png" alt="" onerror="this.parentElement.style.display='none'">
+          <div class="achievement-card__preview expandable-img" title="Clique para ampliar">
+            <img src="assets/achievements/football.png" alt="Flag Football data" data-modal>
           </div>
           <div class="achievement-card__body">
-            <div class="achievement-card__icon">🏈</div>
+            <div class="achievement-card__icon">
+              <!-- data scatter icon -->
+              <svg viewBox="0 0 32 32" fill="none" width="36" height="36">
+                <circle cx="7"  cy="10" r="2.5" fill="#EDE9FE" stroke="#6D28D9" stroke-width="2"/>
+                <circle cx="16" cy="7"  r="2.5" fill="#EDE9FE" stroke="#6D28D9" stroke-width="2"/>
+                <circle cx="25" cy="5"  r="2.5" fill="#EDE9FE" stroke="#6D28D9" stroke-width="2"/>
+                <circle cx="7"  cy="20" r="2.5" fill="#EDE9FE" stroke="#6D28D9" stroke-width="2"/>
+                <circle cx="16" cy="17" r="2.5" fill="#EDE9FE" stroke="#6D28D9" stroke-width="2"/>
+                <circle cx="25" cy="14" r="2.5" fill="#6D28D9"/>
+                <path d="M7 10L16 7L25 5" stroke="#6D28D9" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M7 20L16 17L25 14" stroke="#6D28D9" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="4" y1="27" x2="28" y2="27" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
             <div>
               <h3 class="achievement-card__title"
                   data-pt="Análise de Dados no Flag Football"
@@ -695,26 +903,44 @@
          data-en="Open to new opportunities, collaborations, and conversations about data, AI, and technology.">
         Aberta a novas oportunidades, colaborações e conversas sobre dados, IA e tecnologia.
       </p>
-      <div class="contact__cards reveal">
-        <a href="mailto:jubs.ballin@gmail.com" class="contact-card">
-          <div class="contact-card__icon">✉️</div>
-          <span class="contact-card__label">Email</span>
-          <span class="contact-card__value">jubs.ballin@gmail.com</span>
-        </a>
-        <a href="https://github.com/JulianaBallin" target="_blank" rel="noopener" class="contact-card">
-          <div class="contact-card__icon">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+      <div class="contact__hub reveal">
+        <!-- Email CTA principal -->
+        <a href="mailto:jubs.ballin@gmail.com" class="contact__email">
+          <div class="contact__email-icon">
+            <svg viewBox="0 0 32 32" fill="none" width="28" height="28">
+              <rect x="3" y="7" width="26" height="18" rx="4" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="2"/>
+              <path d="M3 11L16 19L29 11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </div>
-          <span class="contact-card__label">GitHub</span>
-          <span class="contact-card__value">JulianaBallin</span>
-        </a>
-        <a href="https://linkedin.com/in/julianaballin" target="_blank" rel="noopener" class="contact-card">
-          <div class="contact-card__icon">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <div class="contact__email-text">
+            <span data-pt="Escreva para mim" data-en="Write to me">Escreva para mim</span>
+            <strong>jubs.ballin@gmail.com</strong>
           </div>
-          <span class="contact-card__label">LinkedIn</span>
-          <span class="contact-card__value">julianaballin</span>
+          <svg class="contact__email-arrow" viewBox="0 0 24 24" fill="none" width="20" height="20">
+            <path d="M5 12H19M13 6L19 12L13 18" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </a>
+        <!-- Social links -->
+        <div class="contact__socials">
+          <a href="https://github.com/JulianaBallin" target="_blank" rel="noopener" class="contact__social">
+            <div class="contact__social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </div>
+            <div class="contact__social-text">
+              <span>GitHub</span>
+              <strong>JulianaBallin</strong>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/julianaballin" target="_blank" rel="noopener" class="contact__social">
+            <div class="contact__social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div class="contact__social-text">
+              <span>LinkedIn</span>
+              <strong>julianaballin</strong>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -733,6 +959,19 @@
       </div>
     </div>
   </footer>
+
+  <!-- IMAGE LIGHTBOX MODAL -->
+  <div id="imgModal" class="modal" role="dialog" aria-modal="true" aria-label="Imagem ampliada">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__box">
+      <button class="modal__close" id="modalClose" aria-label="Fechar">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <img id="modalImg" src="" alt="" class="modal__img">
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

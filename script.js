@@ -61,20 +61,43 @@ function type() {
 setTimeout(type, 800);
 
 /* =============================================
-   HEADER SCROLL EFFECT
+   HEADER — SMOOTH GRADIENT ON SCROLL
    ============================================= */
 const header = document.getElementById('header');
-window.addEventListener('scroll', () => {
-  header.classList.toggle('scrolled', window.scrollY > 20);
+
+function updateHeader() {
+  const progress = Math.min(window.scrollY / 160, 1);
+
+  // Interpolate: light background (249,248,245) → purple (109,40,217)
+  const r = Math.round(249 + (109 - 249) * progress);
+  const g = Math.round(248 + (40  - 248) * progress);
+  const b = Math.round(245 + (217 - 245) * progress);
+  const a = 0.85 + (0.97 - 0.85) * progress;
+
+  header.style.background = `rgba(${r},${g},${b},${a})`;
+
+  // Use scrolled class at 50% threshold to flip text/link colours
+  header.classList.toggle('scrolled', progress > 0.5);
+
+  // Shadow fades in gradually
+  if (progress > 0.08) {
+    header.style.boxShadow = `0 4px 32px rgba(109,40,217,${progress * 0.28})`;
+  } else {
+    header.style.boxShadow = '';
+  }
+
   updateActiveNav();
-}, { passive: true });
+}
+
+window.addEventListener('scroll', updateHeader, { passive: true });
+updateHeader(); // initialise on page load
 
 /* =============================================
    ACTIVE NAV HIGHLIGHT
    ============================================= */
 function updateActiveNav() {
   const sections = document.querySelectorAll('section[id]');
-  const links = document.querySelectorAll('.nav__link');
+  const links    = document.querySelectorAll('.nav__link');
   let current = '';
 
   sections.forEach(section => {
@@ -95,7 +118,7 @@ function updateActiveNav() {
    MOBILE MENU
    ============================================= */
 const burger = document.getElementById('navBurger');
-const menu = document.getElementById('navMenu');
+const menu   = document.getElementById('navMenu');
 
 burger.addEventListener('click', () => {
   const isOpen = menu.classList.toggle('open');
@@ -117,9 +140,7 @@ const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry, i) => {
       if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.classList.add('visible');
-        }, i * 80);
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
         revealObserver.unobserve(entry.target);
       }
     });
@@ -128,3 +149,37 @@ const revealObserver = new IntersectionObserver(
 );
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+/* =============================================
+   IMAGE LIGHTBOX MODAL
+   ============================================= */
+const modal       = document.getElementById('imgModal');
+const modalImg    = document.getElementById('modalImg');
+const modalOverlay = document.getElementById('modalOverlay');
+const modalClose  = document.getElementById('modalClose');
+
+function openModal(src, alt) {
+  modalImg.src = src;
+  modalImg.alt = alt || '';
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  modal.classList.remove('open');
+  document.body.style.overflow = '';
+  // Clear src after transition to avoid flash on reopen
+  setTimeout(() => { if (!modal.classList.contains('open')) modalImg.src = ''; }, 300);
+}
+
+modalOverlay.addEventListener('click', closeModal);
+modalClose.addEventListener('click', closeModal);
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeModal();
+});
+
+// Wire up all expandable images (courses + achievements)
+document.querySelectorAll('.expandable-img img[data-modal]').forEach(img => {
+  img.addEventListener('click', () => openModal(img.src, img.alt));
+});
