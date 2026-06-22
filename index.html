@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juliana Ballin — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo">JB<span class="dot">.</span></a>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#sobre" class="nav__link" data-pt="Sobre Mim" data-en="About Me">Sobre Mim</a></li>
+        <li><a href="#experiencias" class="nav__link" data-pt="Experiências" data-en="Experience">Experiências</a></li>
+        <li><a href="#projetos" class="nav__link" data-pt="Projetos" data-en="Projects">Projetos</a></li>
+        <li><a href="#cursos" class="nav__link" data-pt="Cursos" data-en="Courses">Cursos</a></li>
+        <li><a href="#conquistas" class="nav__link" data-pt="Conquistas" data-en="Achievements">Conquistas</a></li>
+        <li><a href="#contato" class="nav__link" data-pt="Contato" data-en="Contact">Contato</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+          <span class="lang-option active" id="langPT">PT</span>
+          <span class="lang-sep">/</span>
+          <span class="lang-option" id="langEN">EN</span>
+        </button>
+        <button class="nav__burger" id="navBurger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-shapes">
+      <div class="shape shape--1"></div>
+      <div class="shape shape--2"></div>
+      <div class="shape shape--3"></div>
+    </div>
+    <div class="container hero__content">
+      <p class="hero__greeting fade-in" data-pt="Olá, mundo! 👋" data-en="Hello, world! 👋">Olá, mundo! 👋</p>
+      <h1 class="hero__name fade-in">Juliana Ballin</h1>
+      <div class="hero__roles fade-in">
+        <span class="hero__role-prefix" data-pt="Sou " data-en="I'm ">Sou </span>
+        <span class="hero__typewriter" id="typewriter"></span>
+      </div>
+      <p class="hero__tagline fade-in" data-pt="Conectando dados, sistemas e pessoas — de pipelines a IA, do código à solução." data-en="Connecting data, systems and people — from pipelines to AI, from code to solution.">
+        Conectando dados, sistemas e pessoas — de pipelines a IA, do código à solução.
+      </p>
+      <div class="hero__ctas fade-in">
+        <a href="#projetos" class="btn btn--primary" data-pt="Ver Projetos" data-en="See Projects">Ver Projetos</a>
+        <a href="#contato" class="btn btn--outline" data-pt="Entrar em Contato" data-en="Get in Touch">Entrar em Contato</a>
+      </div>
+      <div class="hero__scroll fade-in">
+        <span class="scroll-indicator">
+          <span class="scroll-dot"></span>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE MIM -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label" data-pt="Quem sou" data-en="Who I am">Quem sou</span>
+        <h2 class="section__title" data-pt="Sobre Mim" data-en="About Me">Sobre Mim</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p data-pt="Finalista do bacharelado em Sistemas de Informação pela Universidade do Estado do Amazonas (UEA) e formada em Informática pelo Instituto Federal do Amazonas (IFAM). Atuo como desenvolvedora de software com foco em backend, engenharia de dados, modelagem de sistemas e soluções orientadas por tecnologia." data-en="Final-year student of Information Systems at the State University of Amazonas (UEA) and graduated in Computer Science from the Federal Institute of Amazonas (IFAM). I work as a software developer focused on backend, data engineering, systems modeling, and technology-driven solutions.">
+            Finalista do bacharelado em Sistemas de Informação pela Universidade do Estado do Amazonas (UEA) e formada em Informática pelo Instituto Federal do Amazonas (IFAM). Atuo como desenvolvedora de software com foco em backend, engenharia de dados, modelagem de sistemas e soluções orientadas por tecnologia.
+          </p>
+          <p data-pt="Tenho experiência prática com Python, BigQuery, MongoDB, Docker, WebSocket, MQTT e OPC UA. Já trabalhei com pipelines de dados, automação, dashboards analíticos, testes de software e aplicações com Inteligência Artificial e Large Language Models (LLMs). Tenho também experiência em gêmeos digitais, Asset Administration Shell (AAS) e conceitos do RAMI 4.0, aprofundando minha compreensão sobre protocolos industriais e modelagem de dados." data-en="I have hands-on experience with Python, BigQuery, MongoDB, Docker, WebSocket, MQTT, and OPC UA. I have worked with data pipelines, automation, analytical dashboards, software testing, and AI applications including Large Language Models (LLMs). I also have experience with digital twins, Asset Administration Shell (AAS), and RAMI 4.0 concepts, deepening my understanding of industrial protocols and data modeling.">
+            Tenho experiência prática com Python, BigQuery, MongoDB, Docker, WebSocket, MQTT e OPC UA. Já trabalhei com pipelines de dados, automação, dashboards analíticos, testes de software e aplicações com Inteligência Artificial e Large Language Models (LLMs). Tenho também experiência em gêmeos digitais, Asset Administration Shell (AAS) e conceitos do RAMI 4.0, aprofundando minha compreensão sobre protocolos industriais e modelagem de dados.
+          </p>
+          <p data-pt="Sou curiosa, sempre aprendendo e motivada por desafios que unem lógica, criatividade, dados e tecnologia." data-en="I am curious, always learning, and motivated by challenges that combine logic, creativity, data, and technology.">
+            Sou curiosa, sempre aprendendo e motivada por desafios que unem lógica, criatividade, dados e tecnologia.
+          </p>
+        </div>
+        <div class="about__side reveal">
+          <div class="about__edu-card">
+            <div class="edu-card">
+              <div class="edu-card__icon">🎓</div>
+              <div>
+                <p class="edu-card__degree" data-pt="Bacharelado em Sistemas de Informação" data-en="B.Sc. Information Systems">Bacharelado em Sistemas de Informação</p>
+                <p class="edu-card__school">UEA</p>
+                <p class="edu-card__period">2023 – 2027 · GPA 9.2</p>
+              </div>
+            </div>
+            <div class="edu-card">
+              <div class="edu-card__icon">📚</div>
+              <div>
+                <p class="edu-card__degree" data-pt="Técnico em Informática" data-en="Computer Technician Diploma">Técnico em Informática</p>
+                <p class="edu-card__school">IFAM</p>
+                <p class="edu-card__period">2018 – 2020 · GPA 8.66</p>
+              </div>
+            </div>
+          </div>
+          <div class="about__skills-title reveal" data-pt="Principais tecnologias" data-en="Core technologies">Principais tecnologias</div>
+          <div class="skills-cloud reveal">
+            <span class="skill-tag skill-tag--primary">Python</span>
+            <span class="skill-tag">BigQuery</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag skill-tag--accent">Docker</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag skill-tag--primary">LLMs</span>
+            <span class="skill-tag">MQTT</span>
+            <span class="skill-tag">OPC UA</span>
+            <span class="skill-tag skill-tag--accent">RAG</span>
+            <span class="skill-tag">GCP</span>
+            <span class="skill-tag">WebSocket</span>
+            <span class="skill-tag skill-tag--primary">AAS / RAMI 4.0</span>
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag skill-tag--accent">Scikit-learn</span>
+            <span class="skill-tag">Unity / C#</span>
+            <span class="skill-tag">Arduino / C++</span>
+            <span class="skill-tag skill-tag--primary">Node-RED</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIAS -->
+  <section class="section section--alt" id="experiencias">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label" data-pt="Trajetória" data-en="Career path">Trajetória</span>
+        <h2 class="section__title" data-pt="Experiências" data-en="Experience">Experiências</h2>
+      </div>
+      <div class="timeline">
+
+        <!-- Software Engineer -->
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Software Engineer</h3>
+                <p class="timeline__company" data-pt="Empresa de Tecnologia · Manaus, AM" data-en="Tech Company · Manaus, AM">Empresa de Tecnologia · Manaus, AM</p>
+              </div>
+              <span class="timeline__badge" data-pt="Jan 2026 – Presente" data-en="Jan 2026 – Present">Jan 2026 – Presente</span>
+            </div>
+            <p class="timeline__desc" data-pt="Desenvolvedora Backend com foco em engenharia de dados e integração de sistemas. Atuo em aplicações de gêmeos digitais baseadas em Asset Administration Shell (AAS) e plataformas de eficiência energética, utilizando Python, Docker, MQTT, OPC UA e WebSocket em arquiteturas em camadas. Realizo modelagem de componentes AAS conforme padrões IDTA e conceitos do RAMI 4.0." data-en="Backend Developer building solutions at the intersection of data engineering and system integration. My work focuses on digital twin applications based on Asset Administration Shell (AAS) and energy efficiency platforms. I apply Python, Docker, MQTT, OPC UA, and WebSocket within layered architectures, and model AAS components following IDTA standards and RAMI 4.0 concepts.">
+              Desenvolvedora Backend com foco em engenharia de dados e integração de sistemas. Atuo em aplicações de gêmeos digitais baseadas em Asset Administration Shell (AAS) e plataformas de eficiência energética, utilizando Python, Docker, MQTT, OPC UA e WebSocket em arquiteturas em camadas. Realizo modelagem de componentes AAS conforme padrões IDTA e conceitos do RAMI 4.0.
+            </p>
+            <div class="timeline__tags">
+              <span class="tag">Python</span><span class="tag">Docker</span><span class="tag">MQTT</span><span class="tag">OPC UA</span><span class="tag">WebSocket</span><span class="tag">AAS</span><span class="tag">RAMI 4.0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Engineer -->
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Data Engineer</h3>
+                <p class="timeline__company" data-pt="Empresa de Tecnologia · Manaus, AM" data-en="Tech Company · Manaus, AM">Empresa de Tecnologia · Manaus, AM</p>
+              </div>
+              <span class="timeline__badge">Mar 2025 – Jan 2026</span>
+            </div>
+            <p class="timeline__desc" data-pt="Desenvolvimento e manutenção de pipelines de dados com GCP, BigQuery e MongoDB, e integração de dispositivos IoT industriais via OPC UA e MQTT em ambiente de Indústria 4.0. Atuação com Docker, GitFlow/GitLab, Python e DBeaver, conectando dados do chão de fábrica a soluções em nuvem com confiabilidade e consistência." data-en="Developed and maintained cloud-based data pipelines using GCP, BigQuery, and MongoDB, and implemented device-to-service communication through OPC UA and MQTT in an Industry 4.0 environment with digital twins. Worked with Docker, GitFlow/GitLab, Python, and DBeaver, bridging operational data from the shop floor to cloud solutions with reliability and consistency.">
+              Desenvolvimento e manutenção de pipelines de dados com GCP, BigQuery e MongoDB, e integração de dispositivos IoT industriais via OPC UA e MQTT em ambiente de Indústria 4.0. Atuação com Docker, GitFlow/GitLab, Python e DBeaver, conectando dados do chão de fábrica a soluções em nuvem com confiabilidade e consistência.
+            </p>
+            <div class="timeline__tags">
+              <span class="tag">GCP</span><span class="tag">BigQuery</span><span class="tag">MongoDB</span><span class="tag">Python</span><span class="tag">Docker</span><span class="tag">OPC UA</span><span class="tag">GitLab</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAIC -->
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role" data-pt="Pesquisadora — PAIC" data-en="Researcher — PAIC">Pesquisadora — PAIC</h3>
+                <p class="timeline__company">Universidade do Estado do Amazonas (UEA) · Remote</p>
+              </div>
+              <span class="timeline__badge" data-pt="Ago 2025 – Presente" data-en="Aug 2025 – Present">Ago 2025 – Presente</span>
+            </div>
+            <p class="timeline__desc" data-pt="Pesquisa sobre avaliação do uso de LLMs na geração de casos de teste a partir de User Stories em contexto educacional. Estudo analisa a qualidade dos testes gerados por diferentes padrões de interação com o modelo, investigando presença de test smells e impacto no aprendizado. Artigo aceito no WEI 2026 (CSBC)." data-en="Research on evaluating LLM use in test case generation from User Stories in an educational context. The study analyzes the quality of tests generated through different interaction patterns with the model, investigating the presence of test smells and their impact on learning. Paper accepted at WEI 2026 (CSBC).">
+              Pesquisa sobre avaliação do uso de LLMs na geração de casos de teste a partir de User Stories em contexto educacional. Estudo analisa a qualidade dos testes gerados por diferentes padrões de interação com o modelo, investigando presença de test smells e impacto no aprendizado. Artigo aceito no WEI 2026 (CSBC).
+            </p>
+            <div class="timeline__tags">
+              <span class="tag">LLMs</span><span class="tag">Software Testing</span><span class="tag">Research</span><span class="tag">Test Smells</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- P&D STEM -->
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role" data-pt="Pesquisa & Desenvolvimento — Robótica" data-en="R&D — Robotics">Pesquisa & Desenvolvimento — Robótica</h3>
+                <p class="timeline__company">Academia STEM · Manaus, AM</p>
+              </div>
+              <span class="timeline__badge">Nov 2024 – Abr 2025</span>
+            </div>
+            <p class="timeline__desc" data-pt="Projeto e prototipagem de robôs manipuladores com peças impressas em 3D (Bambu Lab), da modelagem à montagem mecânica. Montagem de placas eletrônicas, testes funcionais e validação de atuadores e sensores. Programação de microcontroladores Arduino em C/C++ para comunicação entre módulos." data-en="Design and prototyping of manipulator robots using 3D-printed parts (Bambu Lab), covering the full process from modeling to mechanical assembly. Electronic board assembly, functional testing, and actuator/sensor validation. Arduino microcontroller programming in C/C++ to implement module communication.">
+              Projeto e prototipagem de robôs manipuladores com peças impressas em 3D (Bambu Lab), da modelagem à montagem mecânica. Montagem de placas eletrônicas, testes funcionais e validação de atuadores e sensores. Programação de microcontroladores Arduino em C/C++ para comunicação entre módulos.
+            </p>
+            <div class="timeline__tags">
+              <span class="tag">Arduino</span><span class="tag">C/C++</span><span class="tag">3D Printing</span><span class="tag">Electronics</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Dev -->
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role" data-pt="Desenvolvimento de Jogos & QA" data-en="Game Development & QA">Desenvolvimento de Jogos & QA</h3>
+                <p class="timeline__company">Ludus Lab · Manaus, AM</p>
+              </div>
+              <span class="timeline__badge">Jun 2023 – Ago 2024</span>
+            </div>
+            <p class="timeline__desc" data-pt="Desenvolvimento de jogos com Unity e C# seguindo o ciclo completo de implementação e validação. Atuação em testes, criação de cenários, definição de critérios de aceitação e aplicação de Heurísticas de Nielsen para avaliação de usabilidade. Forte orientação para documentação: fluxos, requisitos, bugs, métricas e evidências." data-en="Game development using Unity and OOP in C#, following the full implementation and validation cycle. Extensive game testing, creating test scenarios, defining acceptance criteria, and applying Nielsen's Heuristics to evaluate usability and improve user experience. Strong documentation focus: flows, requirements, bugs, metrics, and evidence.">
+              Desenvolvimento de jogos com Unity e C# seguindo o ciclo completo de implementação e validação. Atuação em testes, criação de cenários, definição de critérios de aceitação e aplicação de Heurísticas de Nielsen para avaliação de usabilidade. Forte orientação para documentação: fluxos, requisitos, bugs, métricas e evidências.
+            </p>
+            <div class="timeline__tags">
+              <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">QA</span><span class="tag">Usability Testing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Whirlpool -->
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Data Analyst</h3>
+                <p class="timeline__company">Whirlpool Corporation · Manaus, AM</p>
+              </div>
+              <span class="timeline__badge">Mai 2021 – Fev 2023</span>
+            </div>
+            <p class="timeline__desc" data-pt="Suporte logístico com SAP, controle de fluxo de pedidos e automação de processos via planilhas inteligentes. Análise de dados, criação de dashboards e monitoramento de KPIs com Power BI, Looker Studio e Tableau. Participação em projetos de redução de custos orientados por dados estratégicos." data-en="Logistics support with SAP proficiency, order flow control, and process automation through smart spreadsheets. Data analysis, dashboard creation, and KPI monitoring using Power BI, Looker Studio, and Tableau. Participated in cost reduction projects driven by strategic data interpretation, contributing to faster decision-making.">
+              Suporte logístico com SAP, controle de fluxo de pedidos e automação de processos via planilhas inteligentes. Análise de dados, criação de dashboards e monitoramento de KPIs com Power BI, Looker Studio e Tableau. Participação em projetos de redução de custos orientados por dados estratégicos.
+            </p>
+            <div class="timeline__tags">
+              <span class="tag">SAP</span><span class="tag">Power BI</span><span class="tag">Looker Studio</span><span class="tag">Tableau</span><span class="tag">Data Analysis</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="section" id="projetos">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label" data-pt="O que construí" data-en="What I've built">O que construí</span>
+        <h2 class="section__title" data-pt="Projetos" data-en="Projects">Projetos</h2>
+      </div>
+      <div class="projects__grid">
+
+        <!-- DeclarAI -->
+        <div class="project-card reveal">
+          <div class="project-card__top">
+            <span class="project-card__icon">🧾</span>
+            <div class="project-card__links">
+              <a href="https://github.com/JulianaBallin" target="_blank" rel="noopener" class="project-card__link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">DeclarAI</h3>
+          <p class="project-card__subtitle" data-pt="Assistente Inteligente com Agentic RAG para IRPF" data-en="Intelligent Assistant with Agentic RAG for Income Tax">Assistente Inteligente com Agentic RAG para IRPF</p>
+          <p class="project-card__desc" data-pt="Micro SaaS para organização de documentos fiscais e consulta sobre regras do IRPF. Upload de documentos, classificação tributária, consulta em linguagem natural e execução local para privacidade (conformidade LGPD)." data-en="Micro SaaS for tax document organization and natural language queries about Income Tax (IRPF). Document upload, tax classification, natural language queries, and local execution for privacy (LGPD compliance).">
+            Micro SaaS para organização de documentos fiscais e consulta sobre regras do IRPF. Upload de documentos, classificação tributária, consulta em linguagem natural e execução local para privacidade (conformidade LGPD).
+          </p>
+          <div class="project-card__tags">
+            <span class="tag tag--sm">FastAPI</span><span class="tag tag--sm">React</span><span class="tag tag--sm">Agentic RAG</span><span class="tag tag--sm">ChromaDB</span><span class="tag tag--sm">Ollama</span><span class="tag tag--sm">Mistral</span><span class="tag tag--sm">SQLite</span>
+          </div>
+          <div class="project-card__assoc" data-pt="UEA · 2026" data-en="UEA · 2026">UEA · 2026</div>
+        </div>
+
+        <!-- AmazIA -->
+        <div class="project-card reveal">
+          <div class="project-card__top">
+            <span class="project-card__icon">🛒</span>
+            <div class="project-card__links">
+              <a href="https://github.com/JulianaBallin/recommendation-systems-sefaz" target="_blank" rel="noopener" class="project-card__link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">AmazIA</h3>
+          <p class="project-card__subtitle" data-pt="Sistema de Recomendação de Produtos" data-en="Product Recommendation System">Sistema de Recomendação de Produtos</p>
+          <p class="project-card__desc" data-pt="Sistema de recomendação híbrido com dados de NF-e de Manaus, combinando Filtragem Colaborativa e Baseada em Conteúdo. Modelos SVD/SVD++, avaliação com Precision, Recall, RMSE, NDCG. Backend FastAPI + frontend Streamlit." data-en="Hybrid recommendation system using electronic invoice data from Manaus, combining Collaborative and Content-Based Filtering. SVD/SVD++ models, evaluation with Precision, Recall, RMSE, NDCG. FastAPI backend + Streamlit frontend.">
+            Sistema de recomendação híbrido com dados de NF-e de Manaus, combinando Filtragem Colaborativa e Baseada em Conteúdo. Modelos SVD/SVD++, avaliação com Precision, Recall, RMSE, NDCG. Backend FastAPI + frontend Streamlit.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag tag--sm">Python</span><span class="tag tag--sm">FastAPI</span><span class="tag tag--sm">Streamlit</span><span class="tag tag--sm">Scikit-learn</span><span class="tag tag--sm">SVD</span><span class="tag tag--sm">Pandas</span>
+          </div>
+          <div class="project-card__assoc" data-pt="UEA · 2025" data-en="UEA · 2025">UEA · 2025</div>
+        </div>
+
+        <!-- ANP Fuel -->
+        <div class="project-card reveal">
+          <div class="project-card__top">
+            <span class="project-card__icon">⛽</span>
+            <div class="project-card__links">
+              <a href="https://github.com/JulianaBallin/AnaliseCombustiveisANP" target="_blank" rel="noopener" class="project-card__link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">ANP Fuel Analysis</h3>
+          <p class="project-card__subtitle" data-pt="Análise Multidimensional com PCA, MDS e AutoML" data-en="Multidimensional Analysis with PCA, MDS and AutoML">Análise Multidimensional com PCA, MDS e AutoML</p>
+          <p class="project-card__desc" data-pt="Análise exploratória de dados públicos da ANP sobre preços e vendas de combustíveis. Aplicação de PCA e MDS para identificar padrões regionais, clusters e outliers. Comparação AutoML com FLAML e LightAutoML para resultados preditivos." data-en="Exploratory analysis of ANP public data on fuel prices and sales. Applied PCA and MDS to identify regional patterns, clusters, and outliers. AutoML comparison with FLAML and LightAutoML for predictive results.">
+            Análise exploratória de dados públicos da ANP sobre preços e vendas de combustíveis. Aplicação de PCA e MDS para identificar padrões regionais, clusters e outliers. Comparação AutoML com FLAML e LightAutoML para resultados preditivos.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag tag--sm">Python</span><span class="tag tag--sm">PCA</span><span class="tag tag--sm">MDS</span><span class="tag tag--sm">FLAML</span><span class="tag tag--sm">Scikit-learn</span><span class="tag tag--sm">Data Viz</span>
+          </div>
+          <div class="project-card__assoc" data-pt="UEA · 2026" data-en="UEA · 2026">UEA · 2026</div>
+        </div>
+
+        <!-- IoT Smart Room -->
+        <div class="project-card reveal">
+          <div class="project-card__top">
+            <span class="project-card__icon">🏫</span>
+            <div class="project-card__links">
+              <a href="https://github.com/JulianaBallin/iot-smart-room" target="_blank" rel="noopener" class="project-card__link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">IoT — Smart Room</h3>
+          <p class="project-card__subtitle" data-pt="Sala Automatizada com ESP32, MQTT e Node-RED" data-en="Automated Classroom with ESP32, MQTT and Node-RED">Sala Automatizada com ESP32, MQTT e Node-RED</p>
+          <p class="project-card__desc" data-pt="Sistema integrado simulando uma sala automatizada com WOKWI (ESP32), comunicação MQTT e dashboard interativo no Node-RED. Sensores LDR, DHT22, sonar e servo motor para controle em tempo real de luminosidade, temperatura e acesso." data-en="Integrated system simulating an automated classroom using WOKWI (ESP32), MQTT communication, and an interactive Node-RED dashboard. LDR, DHT22, sonar, and servo motor sensors for real-time control of lighting, temperature, and access.">
+            Sistema integrado simulando uma sala automatizada com WOKWI (ESP32), comunicação MQTT e dashboard interativo no Node-RED. Sensores LDR, DHT22, sonar e servo motor para controle em tempo real de luminosidade, temperatura e acesso.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag tag--sm">ESP32</span><span class="tag tag--sm">MQTT</span><span class="tag tag--sm">Node-RED</span><span class="tag tag--sm">Arduino</span><span class="tag tag--sm">IoT</span><span class="tag tag--sm">WOKWI</span>
+          </div>
+          <div class="project-card__assoc">UEA · 2025</div>
+        </div>
+
+        <!-- Inventorize -->
+        <div class="project-card reveal">
+          <div class="project-card__top">
+            <span class="project-card__icon">📦</span>
+            <div class="project-card__links">
+              <a href="https://github.com/JulianaBallin/inventorize-webapp" target="_blank" rel="noopener" class="project-card__link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Inventorize</h3>
+          <p class="project-card__subtitle" data-pt="Sistema de Controle de Inventário" data-en="Inventory Management System">Sistema de Controle de Inventário</p>
+          <p class="project-card__desc" data-pt="Sistema web para gerenciamento de inventário desenvolvido para a disciplina de Modelagem e Projeto de Sistemas. Integração frontend-backend com banco de dados Neon (nuvem), cadastro de produtos com nome, código, marca, categoria, preço e estoque." data-en="Web system for inventory management developed for the Systems Modeling and Design course. Frontend-backend integration with Neon cloud database, product registration with name, code, brand, category, price, and stock.">
+            Sistema web para gerenciamento de inventário desenvolvido para a disciplina de Modelagem e Projeto de Sistemas. Integração frontend-backend com banco de dados Neon (nuvem), cadastro de produtos com nome, código, marca, categoria, preço e estoque.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag tag--sm">MySQL</span><span class="tag tag--sm">Systems Modeling</span><span class="tag tag--sm">Neon DB</span><span class="tag tag--sm">Web</span>
+          </div>
+          <div class="project-card__assoc" data-pt="UEA · 2024" data-en="UEA · 2024">UEA · 2024</div>
+        </div>
+
+        <!-- Conserta Aqui -->
+        <div class="project-card reveal">
+          <div class="project-card__top">
+            <span class="project-card__icon">🔧</span>
+            <div class="project-card__links"></div>
+          </div>
+          <h3 class="project-card__title">Conserta Aqui</h3>
+          <p class="project-card__subtitle" data-pt="Plataforma de Serviços de Manutenção" data-en="Maintenance Services Platform">Plataforma de Serviços de Manutenção</p>
+          <p class="project-card__desc" data-pt="Plataforma web para conexão de usuários com serviços de manutenção e reparos estruturais, desenvolvida como projeto para a disciplina de Linguagem de Programação no IFAM." data-en="Web platform connecting users with structural maintenance and repair services, developed as a course project for the Programming Languages discipline at IFAM.">
+            Plataforma web para conexão de usuários com serviços de manutenção e reparos estruturais, desenvolvida como projeto para a disciplina de Linguagem de Programação no IFAM.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag tag--sm">Web</span><span class="tag tag--sm">Programming</span>
+          </div>
+          <div class="project-card__assoc">IFAM · 2020</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CURSOS -->
+  <section class="section section--alt" id="cursos">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label" data-pt="Aprendizado contínuo" data-en="Lifelong learning">Aprendizado contínuo</span>
+        <h2 class="section__title" data-pt="Cursos & Certificações" data-en="Courses & Certifications">Cursos & Certificações</h2>
+      </div>
+      <div class="courses__grid">
+
+        <div class="course-card reveal">
+          <div class="course-card__header">
+            <span class="course-card__icon">🤖</span>
+            <span class="course-card__date">Mar 2026</span>
+          </div>
+          <h3 class="course-card__title" data-pt="Análise de Texto e LLMs com Python" data-en="Text Analysis and LLMs with Python">Análise de Texto e LLMs com Python</h3>
+          <p class="course-card__issuer">QA Ltd · ID 22748777</p>
+          <p class="course-card__desc" data-pt="Processamento de linguagem natural, IA, automação e interpretação de dados textuais com modelos de linguagem." data-en="Natural language processing, AI, automation, and text data interpretation with language models.">
+            Processamento de linguagem natural, IA, automação e interpretação de dados textuais com modelos de linguagem.
+          </p>
+          <div class="course-card__tags"><span class="tag tag--sm">Python</span><span class="tag tag--sm">LLMs</span><span class="tag tag--sm">NLP</span></div>
+        </div>
+
+        <div class="course-card reveal">
+          <div class="course-card__header">
+            <span class="course-card__icon">☸️</span>
+            <span class="course-card__date">Mar 2026</span>
+          </div>
+          <h3 class="course-card__title">Kubernetes Tools</h3>
+          <p class="course-card__issuer">QA Ltd · ID 22746592</p>
+          <p class="course-card__desc" data-pt="Ecossistema Kubernetes: gerenciamento, organização e operação de ambientes de containers em produção." data-en="Kubernetes ecosystem: management, organization, and operation of container environments in production.">
+            Ecossistema Kubernetes: gerenciamento, organização e operação de ambientes de containers em produção.
+          </p>
+          <div class="course-card__tags"><span class="tag tag--sm">Kubernetes</span><span class="tag tag--sm">Docker</span><span class="tag tag--sm">Cloud</span></div>
+        </div>
+
+        <div class="course-card reveal">
+          <div class="course-card__header">
+            <span class="course-card__icon">🐳</span>
+            <span class="course-card__date">Mai 2026</span>
+          </div>
+          <h3 class="course-card__title" data-pt="Gerenciamento Avançado de Containers" data-en="Advanced Container Management">Gerenciamento Avançado de Containers</h3>
+          <p class="course-card__issuer">UEA · ID 1630635</p>
+          <p class="course-card__desc" data-pt="Docker Compose, stacks, serviços, Portainer e orquestração de ambientes conteinerizados." data-en="Docker Compose, stacks, services, Portainer, and containerized environment orchestration.">
+            Docker Compose, stacks, serviços, Portainer e orquestração de ambientes conteinerizados.
+          </p>
+          <div class="course-card__tags"><span class="tag tag--sm">Docker</span><span class="tag tag--sm">Portainer</span><span class="tag tag--sm">Orchestration</span></div>
+        </div>
+
+        <div class="course-card reveal">
+          <div class="course-card__header">
+            <span class="course-card__icon">🏭</span>
+            <span class="course-card__date">Jan 2026</span>
+          </div>
+          <h3 class="course-card__title" data-pt="Fundamentos Indústria 4.0: RAMI 4.0 e AAS" data-en="Industry 4.0 Fundamentals: RAMI 4.0 and AAS">Fundamentos Indústria 4.0: RAMI 4.0 e AAS</h3>
+          <p class="course-card__issuer">UEA · ID 1592966</p>
+          <p class="course-card__desc" data-pt="Fundamentos do RAMI 4.0, Asset Administration Shell (AAS) e gêmeos digitais para representação padronizada de ativos industriais." data-en="Fundamentals of RAMI 4.0, Asset Administration Shell (AAS), and digital twins for standardized representation of industrial assets.">
+            Fundamentos do RAMI 4.0, Asset Administration Shell (AAS) e gêmeos digitais para representação padronizada de ativos industriais.
+          </p>
+          <div class="course-card__tags"><span class="tag tag--sm">RAMI 4.0</span><span class="tag tag--sm">AAS</span><span class="tag tag--sm">Digital Twin</span></div>
+        </div>
+
+        <div class="course-card reveal">
+          <div class="course-card__header">
+            <span class="course-card__icon">💻</span>
+            <span class="course-card__date">Jun 2026</span>
+          </div>
+          <h3 class="course-card__title" data-pt="Desenvolvimento em C#" data-en="C# Development">Desenvolvimento em C#</h3>
+          <p class="course-card__issuer">EST/UEA · ID 1637916 · 22h</p>
+          <p class="course-card__desc" data-pt="Fundamentos do C# e POO: classes, herança, polimorfismo, LINQ, ADO.NET, Entity Framework Core, APIs RESTful com ASP.NET Core e autenticação." data-en="C# and OOP fundamentals: classes, inheritance, polymorphism, LINQ, ADO.NET, Entity Framework Core, RESTful APIs with ASP.NET Core, and authentication.">
+            Fundamentos do C# e POO: classes, herança, polimorfismo, LINQ, ADO.NET, Entity Framework Core, APIs RESTful com ASP.NET Core e autenticação.
+          </p>
+          <div class="course-card__tags"><span class="tag tag--sm">C#</span><span class="tag tag--sm">ASP.NET Core</span><span class="tag tag--sm">Entity Framework</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONQUISTAS -->
+  <section class="section" id="conquistas">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label" data-pt="Marcos da jornada" data-en="Career milestones">Marcos da jornada</span>
+        <h2 class="section__title" data-pt="Conquistas Pessoais" data-en="Personal Achievements">Conquistas Pessoais</h2>
+      </div>
+      <div class="achievements__grid">
+
+        <div class="achievement-card reveal">
+          <div class="achievement-card__icon">🥇</div>
+          <div>
+            <h3 class="achievement-card__title" data-pt="1º Lugar — Sistemas de Informação (UEA)" data-en="1st Place — Information Systems (UEA)">1º Lugar — Sistemas de Informação (UEA)</h3>
+            <p class="achievement-card__desc" data-pt="Melhor coeficiente de rendimento do curso, com GPA 9.2 — reflexo de dedicação, rigor acadêmico e comprometimento ao longo de toda a graduação." data-en="Best grade point average in the course, with GPA 9.2 — a reflection of dedication, academic rigor, and commitment throughout the entire undergraduate program.">
+              Melhor coeficiente de rendimento do curso, com GPA 9.2 — reflexo de dedicação, rigor acadêmico e comprometimento ao longo de toda a graduação.
+            </p>
+          </div>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="achievement-card__icon">📝</div>
+          <div>
+            <h3 class="achievement-card__title" data-pt="Artigo Aceito — WEI 2026 (CSBC)" data-en="Paper Accepted — WEI 2026 (CSBC)">Artigo Aceito — WEI 2026 (CSBC)</h3>
+            <p class="achievement-card__desc" data-pt="Publicação do artigo &quot;Avaliação do Uso de LLMs na Geração de CTs a Partir de User Stories: Um Estudo Experimental em Contexto Educacional com Análise de Test Smells&quot; no Workshop sobre Educação em Computação. De 289 submissões válidas, apenas 83 foram aceitas." data-en="Paper &quot;Evaluation of LLM Use in Test Case Generation from User Stories: An Experimental Study in an Educational Context with Test Smell Analysis&quot; accepted at the Workshop on Education in Computing (WEI 2026). Of 289 valid submissions, only 83 were accepted.">
+              Publicação do artigo "Avaliação do Uso de LLMs na Geração de CTs a Partir de User Stories" no WEI 2026. De 289 submissões válidas, apenas 83 foram aceitas.
+            </p>
+          </div>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="achievement-card__icon">✨</div>
+          <div>
+            <h3 class="achievement-card__title" data-pt="Nota Máxima — TCC 1 e TCC 2" data-en="Maximum Grade — TCC 1 and TCC 2">Nota Máxima — TCC 1 e TCC 2</h3>
+            <p class="achievement-card__desc" data-pt="Aprovação com nota máxima em ambas as etapas do Trabalho de Conclusão de Curso na graduação em Sistemas de Informação pela UEA." data-en="Maximum grade in both stages of the undergraduate thesis (TCC) in Information Systems at UEA.">
+              Aprovação com nota máxima em ambas as etapas do Trabalho de Conclusão de Curso na graduação em Sistemas de Informação pela UEA.
+            </p>
+          </div>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="achievement-card__icon">🏈</div>
+          <div>
+            <h3 class="achievement-card__title" data-pt="Análise de Dados no Flag Football" data-en="Data Analysis in Flag Football">Análise de Dados no Flag Football</h3>
+            <p class="achievement-card__desc" data-pt="Pioneira na coleta e análise de dados em competições de flag football no Amazonas, desenvolvendo possibilidades de análise de desempenho individual e por time para premiações e reconhecimento de MVPs. Dados disponíveis publicamente via Google Looker Studio." data-en="Pioneer in data collection and analysis for flag football competitions in Amazonas, developing individual and team performance analysis to identify MVPs and award recognitions. Data publicly available via Google Looker Studio.">
+              Pioneira na coleta e análise de dados em competições de flag football no Amazonas, desenvolvendo análises de desempenho individual e por time. Dados disponíveis publicamente via Google Looker Studio.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section section--alt" id="contato">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label" data-pt="Vamos conversar" data-en="Let's talk">Vamos conversar</span>
+        <h2 class="section__title" data-pt="Contato" data-en="Contact">Contato</h2>
+      </div>
+      <p class="contact__intro reveal" data-pt="Aberta a novas oportunidades, colaborações e conversas sobre dados, IA e tecnologia." data-en="Open to new opportunities, collaborations, and conversations about data, AI, and technology.">
+        Aberta a novas oportunidades, colaborações e conversas sobre dados, IA e tecnologia.
+      </p>
+      <div class="contact__cards reveal">
+        <a href="mailto:jubs.ballin@gmail.com" class="contact-card">
+          <div class="contact-card__icon">✉️</div>
+          <span class="contact-card__label">Email</span>
+          <span class="contact-card__value">jubs.ballin@gmail.com</span>
+        </a>
+        <a href="https://github.com/JulianaBallin" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-card__icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </div>
+          <span class="contact-card__label">GitHub</span>
+          <span class="contact-card__value">JulianaBallin</span>
+        </a>
+        <a href="https://linkedin.com/in/julianaballin" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-card__icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <span class="contact-card__label">LinkedIn</span>
+          <span class="contact-card__value">julianaballin</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__logo">JB<span class="dot">.</span></span>
+      <p class="footer__copy" data-pt="Feito com curiosidade e muito café." data-en="Made with curiosity and lots of coffee.">Feito com curiosidade e muito café.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
