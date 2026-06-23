@@ -158,6 +158,40 @@ const revealObserver = new IntersectionObserver(
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
 /* =============================================
+   COUNT-UP ANIMATION (stats in About)
+   ============================================= */
+function countUp(el) {
+  const target = parseInt(el.getAttribute('data-count'), 10);
+  const duration = 1100;
+  const startTime = performance.now();
+
+  function tick(now) {
+    const progress = Math.min((now - startTime) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.round(eased * target);
+    if (progress < 1) requestAnimationFrame(tick);
+  }
+
+  requestAnimationFrame(tick);
+}
+
+const statsGrid = document.querySelector('.about__stats');
+if (statsGrid) {
+  const statsObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.stat-num').forEach(countUp);
+          statsObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+  statsObserver.observe(statsGrid);
+}
+
+/* =============================================
    IMAGE LIGHTBOX MODAL
    ============================================= */
 const modal       = document.getElementById('imgModal');
