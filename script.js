@@ -61,36 +61,43 @@ function type() {
 setTimeout(type, 800);
 
 /* =============================================
-   HEADER — SMOOTH GRADIENT ON SCROLL
+   HEADER — GRADIENT ON SCROLL
    ============================================= */
 const header = document.getElementById('header');
 
 function updateHeader() {
-  const progress = Math.min(window.scrollY / 160, 1);
+  const p = Math.min(window.scrollY / 200, 1);
+  // Ease-in so the gradient appears quickly as you start scrolling
+  const eased = Math.pow(p, 0.55);
 
-  // Interpolate: light background (249,248,245) → purple (109,40,217)
-  const r = Math.round(249 + (109 - 249) * progress);
-  const g = Math.round(248 + (40  - 248) * progress);
-  const b = Math.round(245 + (217 - 245) * progress);
-  const a = 0.85 + (0.97 - 0.85) * progress;
-
-  header.style.background = `rgba(${r},${g},${b},${a})`;
-
-  // Use scrolled class at 50% threshold to flip text/link colours
-  header.classList.toggle('scrolled', progress > 0.5);
-
-  // Shadow fades in gradually
-  if (progress > 0.08) {
-    header.style.boxShadow = `0 4px 32px rgba(109,40,217,${progress * 0.28})`;
-  } else {
+  if (p < 0.02) {
+    // Fully transparent at the very top
+    header.style.background = 'transparent';
+    header.style.backdropFilter = 'none';
+    header.style.webkitBackdropFilter = 'none';
     header.style.boxShadow = '';
+  } else {
+    const alpha = eased * 0.97;
+    // Diagonal purple gradient (more dramatic than a solid colour)
+    header.style.background =
+      `linear-gradient(135deg,
+        rgba(109,40,217,${alpha}) 0%,
+        rgba(147,51,234,${alpha * 0.88}) 50%,
+        rgba(124,58,237,${alpha * 0.95}) 100%)`;
+    header.style.backdropFilter = `blur(${eased * 14}px)`;
+    header.style.webkitBackdropFilter = `blur(${eased * 14}px)`;
+    header.style.boxShadow = eased > 0.25
+      ? `0 4px 40px rgba(109,40,217,${eased * 0.38})`
+      : '';
   }
 
+  // Flip link/logo colours at 40% of scroll
+  header.classList.toggle('scrolled', p > 0.4);
   updateActiveNav();
 }
 
 window.addEventListener('scroll', updateHeader, { passive: true });
-updateHeader(); // initialise on page load
+updateHeader();
 
 /* =============================================
    ACTIVE NAV HIGHLIGHT
@@ -182,4 +189,26 @@ document.addEventListener('keydown', e => {
 // Wire up all expandable images (courses + achievements)
 document.querySelectorAll('.expandable-img img[data-modal]').forEach(img => {
   img.addEventListener('click', () => openModal(img.src, img.alt));
+});
+
+/* =============================================
+   FLIP CARDS — TOUCH / CLICK TOGGLE (mobile)
+   ============================================= */
+const isTouchDevice = () => window.matchMedia('(hover: none)').matches;
+
+document.querySelectorAll('.flip-card').forEach(card => {
+  card.addEventListener('click', (e) => {
+    if (!isTouchDevice()) return; // hover handles it on desktop
+    // If clicking the CTA link on the back, let it navigate normally
+    if (e.target.closest('.flip-card__cta')) return;
+    card.classList.toggle('flipped');
+  });
+
+  // Allow keyboard Enter/Space to flip
+  card.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      card.classList.toggle('flipped');
+    }
+  });
 });
